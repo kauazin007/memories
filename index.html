@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Memorial - Kauã</h1>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Anos</button>
+                <div class="dropdown-content">
+                    <a href="#secao1">2023</a>
+                    <a href="#secao2">2024</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="secao" id="secao1">
+        <h2>Bem-vindo ao meu memorial</h2>
+        <p>Aqui você encontrará registros sobre como foi meu segundo e terceiro ano do ensino médio!</p>
+        <p>Tentarei abordar o máximo de informações que eu conseguir, juntamente de imagens, que não tenho muitas... a primeira seção do site vai ter vagas memorias do segundo ano(2023) e a segunda seção memorias do terceiro ano(2024)</p>
+        
+        <div class="foto-container">
+            <div class="foto-item">
+                <div class="foto" style="background-image: url('1.jpeg');"></div>
+                <div class="descricao">2023</div>
+            </div>
+            <div class="foto-item">
+                <div class="foto" style="background-image: url('2.jpeg');"></div>
+                <div class="descricao">2023 - Todas estas fotos possuem um mesmo contexto em que eu acabei saindo numa foto em grupo da galera que eu andava em 2023, o joão está em todas elas.</div>
+            </div>
+            <div class="foto-item">
+                <div class="foto" style="background-image: url('3.jpeg');"></div>
+                <div class="descricao">2023</div>
+            </div>
+        </div>
+        
+        <button onclick="scrollToSection('secao2')">Próxima Seção</button>
+    </div>
+    
+    <div class="secao" id="secao2">
+        <!-- Botão de áudio personalizado -->
+        <audio id="audioPlayer">
+            <source src="01 - Secretária - Assédio Sexual.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <button id="playButton" class="audio-button">🔊 Reproduzir Áudio</button>
+        
+        <h2>Terceirão</h2>
+        <p>Terceiro ano foi cheio de desgraça, apesar disso foi cheio de coisa boa também, aprendia joga truco e me enturmei com uma galera, tirei uma foto boa da luta(apesar de ter perdido KKKK), e gastei um dinheiro do capeta por causa dos trabalhos que os professores passam, essa parte foi paia, 100 conto numa mesa pra ciele tmnc</p>
+        
+        <div class="galeria-container">
+            <div class="linha">
+                <div class="foto-item">
+                    <div class="foto" style="background-image: url('4.jpeg');"></div>
+                    <div class="descricao">João e eu tirando fotinha de cria</div>
+                </div>
+                <div class="foto-item">
+                    <div class="foto" style="background-image: url('5.jpeg');"></div>
+                    <div class="descricao">Paulão se lambuzando no trabalho da ciele kkKKKKK</div>
+                </div>
+                <div class="foto-item">
+                    <div class="foto" style="background-image: url('6.jpeg');"></div>
+                    <div class="descricao">Os dois vagabundo que não fez nada durante as 3 aulas da ciele(ficaram vendo anime, vê se pode)</div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="foto-item">
+                    <div class="foto" style="background-image: url('7.jpeg');"></div>
+                    <div class="descricao">Banquete que teve(Luciano ganho no Tigrinho crtz)</div>
+                </div>
+                <div class="foto-item">
+                    <div class="foto" style="background-image: url('8.jpeg');"></div>
+                    <div class="descricao">Eu pronto pra ganha dos otário no truco</div>
+                </div>
+                <div class="foto-item">
+                    <div class="foto" style="background-image: url('9.jpeg');"></div>
+                    <div class="descricao">Perdi pro Nathã e bolivia tmnc</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <button id="backToTop" onclick="scrollToTop()">Voltar ao Topo</button>
+
+</main>
+
+<footer>
+    <p>Kauã | Colegio Estadual Padre Claudio Morelli | Nº 21</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
